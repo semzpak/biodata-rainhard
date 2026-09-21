@@ -3,51 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hobby</title>
+        <title>Review</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="assets/favicon.ico">
     </head>
 
     <body>
         <header>
             <h1>Rainhard </h1>
             <nav>
-                <a href="/index.html">Home</a>  
-                <a href="/hobby.html">Hobby</a> 
-                <a href="/review.html" class="active">Review</a> 
+                <a href="index.html">Home</a>  
+                <a href="hobby.html">Hobby</a> 
+                <a href="review.html" class="active">Review</a> 
             </nav>
         </header>
 
         <section id="review">
             <h2>Review</h2>
-            <form>
-                <label>Nama:</label> <br>
-                <input type="text" placeholder="Tuliskan namamu">
+            <div class="form-container">
+                <form>
+                    <label>Nama:</label> <br>
+                    <input type="text" placeholder="Tuliskan namamu" required>
 
-                <br><br>
+                    <br><br>
 
-                <label>Rating:</label><br>
-                <select>
-                    <option disabled selected>Pilih rating</option>
-                    <option>Sangat baik</option>
-                    <option>Baik</option>
-                    <option>Cukup</option>
-                    <option>Buruk</option>
-                    <option>Sangat buruk</option>
-                </select>
+                    <label>Rating:</label><br>
+                    <select required>
+                        <option disabled selected>Pilih rating</option>
+                        <option>Sangat baik</option>
+                        <option>Baik</option>
+                        <option>Cukup</option>
+                        <option>Buruk</option>
+                        <option>Sangat buruk</option>
+                    </select>
 
-                <br><br>
+                    <br><br>
 
-                <label>Komentar:</label><br>
-                <textarea rows="3" cols="30" placeholder="Tulis pendapat anda"></textarea>
+                    <label>Komentar:</label><br>
+                    <textarea rows="3" cols="30" placeholder="Tulis pendapat anda" required></textarea>
 
-                <br><br>
+                    <br><br>
 
-                <button>Kirim</button>
-            </form>
+                    <button>Kirim</button>
+                </form>
+            </div>  
         </section>
 
         <footer>
-            <p>Rainhard 2026</p>
+            <p>&copy; Rainhard 2026</p>
         </footer>
     </body>
 </html>
